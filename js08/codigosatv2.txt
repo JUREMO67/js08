@@ -1,0 +1,61 @@
+1- let agora = new Date();
+
+console.log(agora);
+
+2- let data = new Date(2000, 4, 15);
+
+console.log(data);
+
+3- let data = new Date(2000, 4, 15);
+        console.log("Dia:" + data.getDate());
+        console.log("Mês:" + (data.getMonth() + 1));
+        console.log("Ano:" + data.getFullYear());
+
+4-function calcularIdade(dataNascimento) {
+    let hoje = new Date();
+    let nascimento = new Date(dataNascimento);
+    let idade = hoje.getFullYear() - nascimento.getFullYear();
+
+    // Verifica se já fez aniversário este ano
+    if (hoje.getMonth() < nascimento.getMonth()) {
+        idade--;
+    }
+
+    return idade;
+}
+
+console.log(calcularIdade("2000-05-15"));
+
+5-  function executar(callback) {
+        console.log("Executando callback...");
+        callback();
+        }
+        executar(function() {
+        console.log("Olá, mundo!");
+        });
+
+6- function operarNumeros(a, b, callback) {
+    let resultado = callback(a, b);
+    console.log("Resultado:", resultado);
+}
+
+operarNumeros(5, 3, function(x, y) {
+    return x + y;
+});
+
+7- let tarefas = [];
+        tarefas.push("Estudar JavaScript");
+        tarefas.push("Fazer exercícios");
+        console.log("Tarefas:", tarefas);
+        tarefas[0] = "Estudar JavaScript Avançado";
+        tarefas.splice(0, 1);
+        console.log("Tarefas atualizadas:", tarefas);
+                            
+8- et csv = "nome,idade\nAna,25\nJoão,30";
+        let linhas = csv.split("\n");
+        let cabecalhos = linhas[0].split(",");
+        for (let i = 1; i < linhas.length; i++) {
+            let valores = linhas[i].split(",");
+            console.log(cabecalhos[0] + ":" + valores[0]);
+        }
+                            

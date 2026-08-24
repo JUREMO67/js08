@@ -1,0 +1,37 @@
+[
+    {
+        "titulo": "O Senhor dos Anéis",
+        "autor": "J.R.R. Tolkien",
+        "ano": 1954,
+        "genero": "Fantasia",
+        "disponivel": true
+    },
+    {
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "ano": 1949,
+        "genero": "Ficção Científica",
+        "disponivel": true
+    },
+    {
+        "titulo": "O Pequeno Príncipe",
+        "autor": "Antoine de Saint-Exupéry",
+        "ano": 1943,
+        "genero": "Literatura Infantil",
+        "disponivel": false
+    },
+    {
+        "titulo": "Dom Casmurro",
+        "autor": "Machado de Assis",
+        "ano": 1899,
+        "genero": "Romance",
+        "disponivel": true
+    },
+    {
+        "titulo": "A Revolução dos Bichos",
+        "autor": "George Orwell",
+        "ano": 1945,
+        "genero": "Sátira",
+        "disponivel": true
+    }
+]
